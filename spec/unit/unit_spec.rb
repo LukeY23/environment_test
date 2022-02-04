@@ -37,7 +37,7 @@ RSpec.describe Book, type: :model do
   it 'is not valid without a date' do 
     subject.date = nil 
     expect(subject).not_to be_valid
-    subject.audatethor = '2022-02-02'
+    subject.date = '2022-02-02'
   end
 end
 
